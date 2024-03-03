@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "title": "Mate Torpedo",
+        "description": "Mate de calabaza estilo torpedo",
+        "price": 15000,
+        "thumbnail": "torpedo.jpg",
+        "code": "TOR001",
+        "stock": 100,
+        "status": true,
+        "category": "Mate"
+    },
+    {
+        "id": 2,
+        "title": "Mate Imperial",
+        "description": "Mate de calabaza estilo imperial",
+        "price": 20000,
+        "thumbnail": "imperial.jpg",
+        "code": "IMP001",
+        "stock": 50,
+        "status": true,
+        "category": "Mate"
+    },
+    {
+        "id": 3,
+        "title": "Mate Imperial Cincelado",
+        "description": "Mate de calabaza estilo imperial con cincelado artesanal",
+        "price": 30000,
+        "thumbnail": "cincelado.jpg",
+        "code": "CIN001",
+        "stock": 70,
+        "status": true,
+        "category": "Mate"
+    },
+    {
+        "id": 4,
+        "title": "Mate Acero",
+        "description": "Mate de acero térmico",
+        "price": 25000,
+        "thumbnail": "acero.jpg",
+        "code": "ACE001",
+        "stock": 10,
+        "status": true,
+        "category": "Mate"
+    },
+    {
+        "id": 5,
+        "title": "Yerba Canarias 500Kg",
+        "description": "Yerba importada de Brasil",
+        "price": 10000,
+        "thumbnail": "canarias.jpg",
+        "code": "CAN001",
+        "stock": 12,
+        "status": true,
+        "category": "Yerba"
+    },
+    {
+        "id": 6,
+        "title": "Yerba Vieja 500Kg",
+        "description": "Yerba importada de Paraguay",
+        "price": 8000,
+        "thumbnail": "vieja.jpg",
+        "code": "VIE001",
+        "stock": 11,
+        "status": true,
+        "category": "Yerba"
+    },
+    {
+        "id": 7,
+        "title": "Yerba Tucangua 500Kg",
+        "description": "Yerba traida de Mendoza",
+        "price": 5000,
+        "thumbnail": "tucangua.jpg",
+        "code": "TUC001",
+        "stock": 8,
+        "status": true,
+        "category": "Yerba"
+    },
+    {
+        "id": 8,
+        "title": "Yerba ReiVerde 500Kg",
+        "description": "Yerba importada del norte argentino",
+        "price": 15000,
+        "thumbnail": "reiverde.jpg",
+        "code": "REI001",
+        "stock": 20,
+        "status": true,
+        "category": "Yerba"
+    }
+]
