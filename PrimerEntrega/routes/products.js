@@ -27,11 +27,16 @@ router.get('/:pid', loadProducts, (req, res) => {
 // Ruta para agregar un nuevo producto
 router.post('/', loadProducts, (req, res) => {
     const newProduct = req.body;
+    const existingProduct = req.products.find(p => p.code === newProduct.code); // Verificar si el código ya existe
+    if (existingProduct) {
+        return res.status(400).json({ error: 'Product code already exists' }); // Devolver error si el código ya existe
+    }
     newProduct.id = uuidv4();
     req.products.push(newProduct);
     saveProducts(req.products);
     res.status(201).json(newProduct);
 });
+
 
 // Ruta para actualizar un producto por su ID
 router.put('/:pid', loadProducts, (req, res) => {
@@ -55,8 +60,9 @@ router.delete('/:pid', loadProducts, (req, res) => {
         return res.status(404).json({ error: 'Product not found' });
     }
     saveProducts(req.products);
-    res.sendStatus(204);
+    res.status(200).send('Product deleted successfully.'); // Mensaje de éxito al eliminar el producto
 });
+
 
 module.exports = router;
 
